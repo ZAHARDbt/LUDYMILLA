@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fucinho de Porco!!!</title>
+    <Link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="shortcut icon" href="image/porco-nariz.png">
+
+</head>
+
+<body>
+    <header>
+
+        <H2>Feliz Aniversario Ludyl!!</H2>
+        <div class="point">
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="container">
+    </header>
+    <main>
+        <section class="bx-1" onclick="playAudio1()">
+            <div class="titulo">
+                <h3>Titulo</h3>
+            </div>
+
+        </section><!--bx-1-->
+
+        <section class="bx-2" onclick="">
+            <div class="titulo">
+                <h3>Titulo</h3>
+            </div>
+        </section><!--bx-2-->
+
+        <section class="bx-3" onclick="">
+            <div class="titulo">
+                <h3>Titulo</h3>
+            </div>
+        </section><!--bx-3-->
+        </div><!--Container-->
+        <div class="audios">
+
+
+            <audio id="som-01" src="music/thousand-years.mp3"></audio>
+
+            <audio id="som-02" src="#"></audio>
+
+            <audio id="som-03" src="#"></audio>
+
+        </div>
+        <div class="porco">
+            <img src="image/Porco-andante.gif" alt="imagem de um porco andando">
+        </div>
+
+    </main>
+
+    <script>
+        /* Play Audios thousand days*/
+        function playAudio1() {
+            let x = document.getElementById("som-01");
+            x.play();
+        }
+        /*play Audios som 02*/
+        function playAudio2() {
+            let x = document.getElementById("som-02");
+            x.play();
+        }
+
+        /*play Audios som 03*/
+        function playAudio3() {
+            let x = document.getElementById("som-02");
+            x.play();
+        }
+
+
+
+        /*pause as musicas*/
+        function pauseAudio1() {
+            let x = document.getElementsById("som-01");
+            x.pause();
+        }
+
+    </script>
+</body>
+
+</html>

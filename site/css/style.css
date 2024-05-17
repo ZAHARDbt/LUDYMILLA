@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    
+}
+
+header {
+    height: 11.5%;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+}
+
+header h2 {
+    font-family: trebuchet ms;
+    font-size: clamp(2em, 2em + 2vw, 2.5em);
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.point {
+    z-index: 5;
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 20px;
+    background: coral;
+    filter: saturate(200%);
+    
+   animation: point 3s infinite;
+
+}
+
+@keyframes point {
+    0% {    transform: translateX();
+            width: 200px;}
+
+      
+
+    100% {     transform: translateX(100vw);
+                width: 200px;}
+}
+
+main {
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+section {
+    background: linear-gradient(linen, white);
+    box-shadow: 2px 3px BLACK;
+    width: 30%;
+    height: 60%;
+    animation: move 5s infinite;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+section .titulo h3 {
+    padding-top: 2px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background: coral;
+    color: antiquewhite;
+    text-shadow: -0.5px -1px black;
+    font-size: 30px;
+    font-family: trebuchet ms;
+    letter-spacing: 5px;
+
+
+}
+
+:hover.bx-1 {
+    width: 32%;
+    height: 62%;
+    background: linear-gradient(white, linen);
+    overflow: hidden;
+
+}
+
+:hover.bx-2 {
+    width: 32%;
+    height: 62%;
+    background: linear-gradient(white, linen);
+    overflow: hidden;
+}
+
+:hover.bx-3 {
+    width: 32%;
+    height: 62%;
+    background: linear-gradient(white, linen);
+    overflow: hidden;
+}
+
+
+.porco{
+
+    position: absolute;
+    bottom: 0;
+    left: -230PX;
+    z-index: 6;
+    animation: Move 4S ease-in-out;
+
+}
+.porco img{
+    height: 200px;
+    
+}
+@keyframes Move{
+    0% {  transform: translateX(0);}
+    
+    100% {  transform: translateX(calc(100vw + 200px));
+    opacity: 0;}
+
+
+}
+@media screen and (max-width: 580px) {
+        
+    header {
+        height:6%;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+    }
+    main{
+        display: flex;
+        
+       flex-direction: column; 
+
+    }
+    .container{
+        
+        top: 100px;
+    }
+    main section{
+        height: 25%px;
+        width: 90%;
+        margin-bottom: 15px ;
+
+    }
+
+
+    .bx-1{
+        margin-top: 18%;
+
+    }
+
+    :hover.bx-1, :hover.bx-2, :hover.bx-3 {
+        width: 92%;
+        height:  66%;
+       
+    
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+    header{
+        height: 10%;
+    }
+    
+    header h2 {
+        font-size: 24px;
+    }
+}
